@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Table</title>
+    <style>
+        #first_cell {
+            color: #ff7799;
+            background-color: black;
+        }
+
+        .lab_slots {
+            color: #ffffff;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:blue;font-style: italic;">4EK2 Time Table</h1>
+    <table border="2">
+        <tr>
+            <!-- slot column -->
+            <td id="first_cell">Slot/Day</td>
+            <!-- Mon -->
+            <td colspan="2">Mon</td>
+            <!-- Tue -->
+            <td colspan="2">Tue</td>
+            <!-- Wed -->
+            <td colspan="2">Wed</td>
+            <!-- Thus -->
+            <td colspan="2">Thus</td>
+            <!-- Fri -->
+            <td colspan="2">Fri</td>
+        </tr>
+        <tr>
+            <!-- slot column -->
+            <td>Slot 1</td>
+            <!-- Mon -->
+            <td rowspan="2" class="lab_slots">Sub1-A</td>
+            <td rowspan="2" class="lab_slots">Sub2-B</td>
+            <!-- tue -->
+            <td colspan="2">Sub1</td>
+            <!-- web -->
+            <td colspan="2">Sub4</td>
+            <!-- Thus -->
+            <td rowspan="2" class="lab_slots">Sub5-A</td>
+            <td rowspan="2" class="lab_slots">Sub6-B</td>
+            <!-- Fri -->
+            <td colspan="2">Sub5</td>
+        </tr>
+        <tr>
+            <!-- slot column -->
+            <td>Slot 2</td>
+            <!-- Mon -->
+
+            <!-- tue -->
+            <td rowspan="2" class="lab_slots">Sub3-A</td>
+            <td rowspan="2" class="lab_slots">Sub4-B</td>
+            <!-- web -->
+            <td colspan="2">Sub5</td>
+            <!-- Thus -->
+
+            <!-- Fri -->
+            <td rowspan="2" class="lab_slots">PBL</td>
+            <td rowspan="2" class="lab_slots">Sub5-B</td>
+        </tr>
+        <tr>
+            <!-- slot column -->
+            <td>Slot 3</td>
+            <!-- Mon -->
+            <td colspan="2">Sub2</td>
+            <!-- tue -->
+
+            <!-- web -->
+            <td colspan="2">Sub6</td>
+            <!-- Thus -->
+            <td colspan="2">Sub5</td>
+            <!-- Fri -->
+
+        </tr>
+        <tr>
+            <td>12:30-1:30</td>
+            <td colspan="10">BREAK</td>
+        </tr>
+        <tr>
+            <!-- slot column -->
+            <td>Slot 4</td>
+            <!-- Mon -->
+            <td rowspan="2" class="lab_slots">Sub2-A</td>
+            <td rowspan="2" class="lab_slots">Sub1-B</td>
+            <!-- tue -->
+            <td colspan="2">Sub1</td>
+            <!-- web -->
+            <td colspan="2">Sub5</td>
+            <!-- Thus -->
+            <td rowspan="2" class="lab_slots">Sub6-A</td>
+            <td rowspan="2" class="lab_slots">Sub3-B</td>
+            <!-- Fri -->
+            <td rowspan="2" class="lab_slots">-</td>
+            <td rowspan="2" class="lab_slots">PBL</td>
+        </tr>
+        <tr>
+            <!-- slot column -->
+            <td>Slot 5</td>
+            <!-- Mon -->
+            <!-- tue -->
+            <td colspan="2">Sub2</td>
+            <!-- web -->
+            <td rowspan="2" class="lab_slots">Sub4-A</td>
+            <td rowspan="2" class="lab_slots">Sub5-B</td>
+            <!-- Thus -->
+
+            <!-- Fri -->
+
+        </tr>
+        <tr>
+            <!-- slot column -->
+            <td>Slot 6</td>
+            <!-- Mon -->
+            <td colspan="2">Sub3</td>
+            <!-- tue -->
+            <td colspan="2">Sub3</td>
+            <!-- web -->
+            <!-- Thus -->
+            <td colspan="2">Sub5</td>
+            <!-- Fri -->
+            <td colspan="2">Sub6</td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
