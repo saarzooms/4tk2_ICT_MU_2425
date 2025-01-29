@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My Login Page
+    </title>
+</head>
+
+<body>
+    Username <input type="text" id="uname">
+    Password<input type="password" id="pwd">
+    <button type="button" id="login" onclick="handleLogin()">Login</button>
+    <script>
+        function handleLogin() {
+            var username = document.getElementById('uname').value;
+            var password = document.getElementById('pwd').value;
+            if (username == password)
+                alert('Welcome ' + username)
+            else
+                alert('Invalid credentials')
+            console.log(username, password);
+
+        }
+    </script>
+</body>
+
+</html>
