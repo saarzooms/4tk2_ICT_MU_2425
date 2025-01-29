@@ -11,14 +11,19 @@
     Username <input type="text" id="uname">
     Password<input type="password" id="pwd">
     <button type="button" id="login" onclick="handleLogin()">Login</button>
+    <div id="msg"></div>
     <script>
         function handleLogin() {
             var username = document.getElementById('uname').value;
             var password = document.getElementById('pwd').value;
-            if (username == password)
+            if (username == password) {
                 alert('Welcome ' + username)
-            else
+                document.getElementById('msg').innerText = 'Welcome ' + username
+            }
+            else {
                 alert('Invalid credentials')
+                document.getElementById('msg').innerText = 'Invalid credentials'
+            }
             console.log(username, password);
 
         }
