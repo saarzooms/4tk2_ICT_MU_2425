@@ -1,0 +1,21 @@
+DOB<input type="date" placeholder="Enter your DOB" id="txt_dob" />
+<button onclick="calculate()">Check</button>
+You are <span id="msg">--</span>
+<script>
+    function calculate() {
+        var d = document.getElementById('txt_dob').value;
+        console.log(d);
+        var dt = new Date(d);
+        var curr_dt = new Date();
+        var age = curr_dt.getFullYear() - dt.getFullYear();
+        if (curr_dt.getMonth() < dt.getMonth())
+            age--;
+        else if (curr_dt.getMonth() == dt.getMonth() && curr_dt.getDate() < dt.getDate())
+            age--;
+        console.log('age', age);
+        msg = age < 1 ? "<b style='color:green'>new born</b>" : age < 15 ? "<b style='color:blue'>young/child</b>" : age < 18 ? "<b style='color:orange'>teenage</b>" : "<b style='color:red'>Adult</b>";
+        document.getElementById('msg').innerHTML = msg;
+        // alert(age < 1 ? 'new born' : age < 15 ? 'young/child' : age < 18 ? 'teenage' : 'Adult')
+
+    }
+</script>

@@ -1,0 +1,13 @@
+<person>
+    <name></name>
+    <dob></dob>
+    <address>
+        <lineOne></lineOne>
+        <lineTwo></lineTwo>
+        <landmark></landmark>
+        <city></city>
+        <state></state>
+        <country></country>
+        <pincode></pincode>
+    </address>
+</person>

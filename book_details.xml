@@ -1,0 +1,20 @@
+<books>
+<book>
+    <title>No Title</title>
+    <author>None</author>
+    <price>$50</price>
+    <publication_details>
+        <publication>Unknwon</publication>
+        <year>2025</year>
+    </publication_details>
+</book>
+<book>
+    <title>No Title</title>
+    <author>None</author>
+    <price>$50</price>
+    <publication_details>
+        <publication>Unknwon</publication>
+        <year>2025</year>
+    </publication_details>
+</book>
+</books>
