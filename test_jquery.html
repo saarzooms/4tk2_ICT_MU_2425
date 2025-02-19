@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" id="btn_1" style="background-color: red;color:white">Red</button>
+    <button type="button" id="btn_2" style="background-color: orange;">Orange</button><br />
+    <button type="button" id="btn_3" style="background-color: green;color:white">Green</button><br />
+    <!-- <div id="div_1">This is my div 1</div>
+    <div id="div_2">This is my div 2</div> -->
+    <div id="msg"></div>
+    <script>
+        $("button").on('click', function () {
+            console.log(this.id);
+            var id = this.id;
+            var parts = id.split('_');
+            console.log(parts);
+            var part = parts[1];
+            var msg = part == 1 ? 'stop' : (part == 2 ? 'see and go' : 'bhago');
+            $("#msg").html(msg);
+            // $("#div_" + part).css('display', $("#div_" + part).css('display') == 'none' ? 'block' : 'none');
+        })
+    </script>
+</body>
+
+</html>

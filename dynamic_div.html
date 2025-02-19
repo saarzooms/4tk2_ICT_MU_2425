@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        .mydivs {
+            border: 2px dotted black;
+            margin: 10px;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" name="txtNum" id="txtNum" />
+    <input type="button" name="btnGenerate" id="btnGenerate" value="Click me" />
+    <div class="parent"></div>
+    <script>
+        $("#btnGenerate").on('click', function () {
+            var num = $("#txtNum").val();
+            num = parseInt(num);
+            if (isNaN(num))
+                alert('Enter valid numbers only!!!');
+            else {
+                var html = '';
+                for (var i = 0; i < num; i++) {
+                    var mycolor = '#' + Math.floor(Math.random() * 999999);
+                    html += '<div class ="mydivs" style="background-color:' + mycolor + '"></div>';
+                }
+                $(".parent").html(html);
+            }
+            console.log(num);
+            console.log(typeof num);
+
+        })
+    </script>
+</body>
+
+</html>

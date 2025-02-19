@@ -1,0 +1,70 @@
+<style>
+    .prod_card {
+        display: inline-block;
+        background-color: yellow;
+        width: fit-content;
+    }
+
+    .prod_image {
+        background-color: green;
+    }
+
+    .title {
+        font-size: 50;
+    }
+
+    .descrip {
+        color: green;
+    }
+
+    .actual_price {
+        display: inline-block;
+        font-weight: bold;
+        color: red;
+        text-decoration: line-through;
+    }
+
+    .curr_price {
+        display: inline-block;
+        font-weight: bolder;
+        color: green;
+    }
+</style>
+<div id="prod_section">
+
+</div>
+<script>
+    var products = [
+        {
+            "img": "https://images.everydayhealth.com/images/diet-nutrition/ordinary-fruits-with-amazing-health-benefits-05-1440x810.jpg",
+            "title": "Strawberry",
+            "description": "Fresh Strawberry",
+            "actual_price": "₹40",
+            "curr_price": "₹30"
+        }, {
+            "img": "mango.webp",
+            "title": "Mango",
+            "description": "Fresh Mango",
+            "actual_price": "₹170",
+            "curr_price": "₹150"
+        }, {
+            "img": "apple.jpg",
+            "title": "Apple",
+            "description": "Red Apple",
+            "actual_price": "₹100",
+            "curr_price": "₹80"
+        }
+    ];
+    products.forEach((fruit) => {
+        var html = '<div class="prod_card">' +
+            '<div class="prod_img">' +
+            '<img src="' + fruit.img + '" alt = "' + fruit.title + '" width = "300px" height = "300px" />' +
+            '</div >' +
+            '<div class="title">' + fruit.title + '</div>' +
+            '<div class="descrip">' + fruit.description + '</div>' +
+            '<div class="actual_price">' + fruit.actual_price + '</div>' +
+            '<div class="curr_price">' + fruit.curr_price + '</div>' +
+            '</div > ';
+        document.getElementById('prod_section').innerHTML += html;
+    })
+</script>

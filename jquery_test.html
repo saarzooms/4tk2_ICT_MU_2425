@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p id="hidepara">Hide it</p>
+    <!-- <p id="showpara">Show it</p> -->
+    <div class="myele" style="height:200px;width:200px;background-color: yellow;">This is div</div>
+    <script>
+        $("#hidepara").on('click', function () {
+            console.log('hide para clicked');
+            $(".myele").css('display', $(".myele").css('display') == 'none' ? 'block' : 'none')
+        })
+        $("#showpara").on('click', function () {
+            console.log('show para clicked');
+            $(".myele").css('display', 'block')
+        })
+        $(".myele").on('click', function () {
+            console.log('myele clicked');
+
+        })
+    </script>
+</body>
+
+</html>
